@@ -2,6 +2,7 @@ shoelace-theme
 ==============
 
 Latest Readme updae: December 7th, 2013
+Work in progress branch is wip-0.0.0
 
 A sparse, nuts and bolts parent theme kit for Wordpress using Bootstrap 3.
 
