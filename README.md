@@ -1,6 +1,8 @@
 shoelace-theme
 ==============
 
+Latest Readme updae: December 7th, 2013
+
 A sparse, nuts and bolts parent theme kit for Wordpress using Bootstrap 3.
 
 This theme will be built on the Hybrid-Base parent starter theme, which uses the Hybrid-Core framework
