@@ -133,4 +133,8 @@ function hybrid_base_theme_setup() {
 	hybrid_set_content_width( 1280 );
 }
 
+	// Register Custom Navigation Walker
+	require_once('wp_bootstrap_navwalker.php');
+
+
 ?>

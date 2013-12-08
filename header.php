@@ -10,13 +10,18 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); // wp_head ?>
 
+
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+<![endif]-->
 </head>
 
 <body <?php hybrid_body_attributes(); ?>>
-
+	<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
 	<div id="container">
-
-		<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
 
 		<header id="header">
 
