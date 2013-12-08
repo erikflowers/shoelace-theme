@@ -3,9 +3,9 @@
 	breadcrumb_trail(
 		array( 
 			'container' => 'nav', 
-			'separator' => '>', 
+			'separator' => '/', 
 			'labels'    => array( 
-				'browse' => __( 'You are here:', 'hybrid-base' ) 
+				'browse' => __( '', 'hybrid-base' ) 
 			) 
 		) 
 	);

@@ -21,21 +21,32 @@
 
 <body <?php hybrid_body_attributes(); ?>>
 	<?php get_template_part( 'menu', 'primary' ); // Loads the menu-primary.php template. ?>
-	<div id="container">
-
-		<header id="header">
-
-			<hgroup id="branding">
-				<h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup><!-- #branding -->
-
+		<header id="header" class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<hgroup id="branding">
+							<h1 id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+							<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+						</hgroup><!-- #branding -->
+					</div>
+				</div>
+			</div>
 		</header><!-- #header -->
 
-		<?php if ( get_header_image() ) echo '<img class="header-image" src="' . esc_url( get_header_image() ) . '" alt="" />'; ?>
-
-		<?php get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
-
-		<div id="main">
-
+	<div class="container main">
+		<div class="row">
+			<div class="col-sm-12">
+				<?php if ( get_header_image() ) echo '<img class="header-image" src="' . esc_url( get_header_image() ) . '" alt="" />'; ?>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
 			<?php get_template_part( 'breadcrumbs' ); // Loads the breadcrumbs.php template. ?>
+			</div>
+		</div>
+
+		<!-- Start of main content  -->
+		<div class="row">
+			<div class="col-sm-9">
+				<div id="main">

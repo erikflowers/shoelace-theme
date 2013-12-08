@@ -1,16 +1,14 @@
-<?php if ( has_nav_menu( 'secondary' ) ) {
-
-	wp_nav_menu(
-		array(
-			'theme_location'  => 'secondary',
-			'container'       => 'nav',
-			'container_id'    => 'menu-secondary',
-			'container_class' => 'menu',
-			'menu_id'         => 'menu-secondary-items',
-			'menu_class'      => 'menu-items',
-			'fallback_cb'     => '',
-			'items_wrap'      => '<h3 class="menu-toggle" title="' . esc_attr__( 'Navigation', 'hybrid-base' ) . '">' . __( 'Navigation', 'hybrid-base' ) . '</h3><div class="wrap"><ul id="%1$s" class="%2$s">%3$s</ul></div>'
-		)
-	);
-
-} ?>
+<nav class="" role="navigation">
+  <?php
+      wp_nav_menu( array(
+          'menu'              => 'secondary',
+          'theme_location'    => 'secondary',
+          'depth'             => 2,
+          'container'         => 'div',
+          'container_class'   => '',
+          'menu_class'        => 'nav nav-pills',
+          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+          'walker'            => new wp_bootstrap_navwalker())
+      );
+  ?>
+</nav>

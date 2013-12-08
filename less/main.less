@@ -8,7 +8,7 @@ body {
   font-size: 18px; 
   font-weight: @light;
   background-color: @white;
-  padding-top: 50px;
+  font-size: 14px;
 }
 
 
@@ -20,6 +20,81 @@ img {
 // Nav
 nav {
   &.navbar {
-    background-color: hsl(0, 0%, 97%);
+    //background-color: hsl(0, 0%, 97%);
+  }
+  .navbar-header {
+    .navbar-toggle {
+      padding: 4px 10px;
+    }
+  }
+}
+
+.menu-secondary {
+  ul {
+    margin: 0px;
+  }
+}
+
+// Header
+.main-header {
+  margin-top: 50px;
+}
+
+
+// Forms
+input[type="submit"] {
+  .btn;
+  .btn-primary;
+}
+
+input[type="text"], input[type="password"],  {
+  .form-control;
+}
+
+input[type="reset"], input[type=""],  {
+  .btn;
+}
+
+
+textarea {
+  .form-control;
+  width: auto;
+  min-height: 200px;
+}
+
+
+// UL reset {
+ul {
+  //margin: 0px;
+}
+
+
+// Comments
+
+.comment-list {
+  .ul-unstyled;
+}
+
+
+// Breadcrumbs
+.breadcrumbs {
+  padding: 8px 15px;
+  margin-bottom: @line-height-computed;
+  list-style: none;
+  background-color: @breadcrumb-bg;
+  border-radius: @border-radius-base;
+  > .active {
+    color: @breadcrumb-active-color;
+  }
+  .sep {
+    color: hsl(0, 0%, 80%);
+  }
+}
+
+// Sidebar Subsidiary
+.sidebar-subsidiary {
+  .make-row;
+  .widget {
+    .make-sm-column(4);
   }
 }

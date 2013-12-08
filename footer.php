@@ -1,26 +1,40 @@
-			<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
 
-			<?php get_sidebar( 'secondary' ); // Loads the sidebar-secondary.php template. ?>
+				</div><!-- #main -->
+			</div>
+				<div class="col-sm-3">
+					<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
 
-		</div><!-- #main -->
-
-		<?php get_sidebar( 'subsidiary' ); // Loads the sidebar-subsidiary.php template. ?>
+					<?php get_sidebar( 'secondary' ); // Loads the sidebar-secondary.php template. ?>
+				</div>
+		</div>
 
 		<?php get_template_part( 'menu', 'subsidiary' ); // Loads the menu-subsidiary.php template. ?>
 
-		<footer id="footer">
-
-			<div class="wrap">
-
-				<div class="footer-content">
-					<?php echo apply_atomic_shortcode( 'footer_content', '<p class="credit">' . __( 'Copyright &copy; [the-year] [site-link]. Powered by [wp-link] and [theme-link].', 'hybrid-base' ) . '</p>' ); ?>
-				</div><!-- .footer-content -->
-
-			</div>
-
-		</footer><!-- #footer -->
 
 	</div><!-- #container -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<?php get_sidebar( 'subsidiary' ); // Loads the sidebar-subsidiary.php template. ?>
+				</div>
+			</div>
+    	<div class="row">
+			<div class="col-sm-12">
+				<div class="menu-secondary">
+					<?php get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
+				</div>
+			</div>
+		</div>
+    	<div class="row">
+    		<div class="col-sm-12">
+					<div class="footer-content">
+						<?php echo apply_atomic_shortcode( 'footer_content', '<p class="credit">' . __( '[the-year] [site-link]. ') . '</p>' ); ?>
+					</div><!-- .footer-content -->
+	      </div>
+	    </div>
+		</div>
+	</footer><!-- #footer -->
 
 	<?php wp_footer(); // wp_footer ?>
 
